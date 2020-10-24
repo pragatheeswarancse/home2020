@@ -1,0 +1,115 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+$font-family: 'Poppins',
+sans-serif;
+.underline {
+    background: linear-gradient(60deg, #4568DC 0%, #B06AB3 100%);
+    height: 1px;
+}
+
+.btn-learn:hover {
+    box-shadow: 0 4px 15px 0 #2350FB;
+}
+
+.btn-power:hover {
+    box-shadow: 0 4px 15px 0 #FF0000;
+}
+
+.btn-it:hover {
+    box-shadow: 0 4px 15px 0 #F6B833;
+}
+
+.btn-consulting:hover {
+    box-shadow: 0 4px 15px 0 #531FFF;
+}
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+
+ul.timeline>li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+ul.timeline>li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid #531FFF;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+    box-shadow: 0px 3px 12px #00000029;
+}
+
+.button--red {
+    display: inline-block;
+    border-radius: 15px;
+    background-color: #ffffff;
+    opacity: 68%;
+    min-height: 48px;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    color: #000000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    min-width: 120px;
+    text-decoration: none;
+    border-width: 0px;
+}
+
+.button--red .hover1 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button--red .hover1:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button--red:hover .hover1 {
+    padding-right: 25px;
+}
+
+.button--red:hover .hover1:after {
+    opacity: 1;
+    right: 0;
+}
+
+.card-hover:hover {
+    box-shadow: 0 4px 15px 0 #f9f9fa;
+}
