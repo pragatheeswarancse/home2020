@@ -1,28 +1,52 @@
 // Custom.scss
 // Option A: Include all of Bootstrap
-@import "./node_modules/bootstrap/scss/bootstrap";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
-$font-family: 'Poppins',
-sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+$font-family-base: 'Poppins',
+-apple-system,
+BlinkMacSystemFont,
+'Segoe UI',
+Roboto,
+'Helvetica Neue',
+Arial,
+'Noto Sans',
+sans-serif,
+'Apple Color Emoji',
+'Segoe UI Emoji',
+'Segoe UI Symbol',
+'Noto Color Emoji';
+$container-max-widths: ( sm: 540px,
+md: 720px,
+lg: 1000px,
+xl: 1300px,
+);
+$enable-responsive-font-sizes: true;
+@import './node_modules/bootstrap/scss/bootstrap';
+.home {
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .underline {
-    background: linear-gradient(60deg, #4568DC 0%, #B06AB3 100%);
+    background: linear-gradient(60deg, #4568dc 0%, #b06ab3 100%);
     height: 1px;
 }
 
 .btn-learn:hover {
-    box-shadow: 0 4px 15px 0 #2350FB;
+    box-shadow: 0 4px 15px 0 #2350fb;
 }
 
 .btn-power:hover {
-    box-shadow: 0 4px 15px 0 #FF0000;
+    box-shadow: 0 4px 15px 0 #ff0000;
 }
 
 .btn-it:hover {
-    box-shadow: 0 4px 15px 0 #F6B833;
+    box-shadow: 0 4px 15px 0 #f6b833;
 }
 
 .btn-consulting:hover {
-    box-shadow: 0 4px 15px 0 #531FFF;
+    box-shadow: 0 4px 15px 0 #531fff;
 }
 
 ul.timeline {
@@ -52,7 +76,7 @@ ul.timeline>li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 5px solid #531FFF;
+    border: 5px solid #531fff;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -71,7 +95,7 @@ ul.timeline>li:before {
     -webkit-box-pack: center;
     justify-content: center;
     color: #000000;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 16px;
     text-transform: capitalize;

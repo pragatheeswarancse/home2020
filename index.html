@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="main_menu">
-            <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#181818">
+            <nav class="fixed-top navbar navbar-expand-lg navbar-dark" style="background-color:#181818">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="">Padink</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -127,6 +127,7 @@
     <!-- END section -->
     <section>
         <div class="col-md" style="background-color: #F8F9FA">
+        <div class="container">
             <h1 class="text-left  col-md-4 p-5"><span class="">WHAT</span> WE DO
                 <hr class="underline w-50 col-md pl-0">
             </h1>
@@ -163,10 +164,11 @@
                     <p class="pt-3" style="color:#777777">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
                 </div>
             </div>
+            </div>
         </div>
     </section>
     <!--Section end-->
-    <section class="pt-1">
+    <section class="pt-1 container">
         <div class="col-md">
             <h1 class="text-left  col-md-4 p-5">Recent Work
                 <hr class="underline w-50 col-md pl-0">
@@ -190,10 +192,10 @@
             </div>
             <div class="p-5">
                 <div class="row">
-                    <div class="col-md-4">
-                        <h1 class="mt-5 font-weight-bold pr-5 text-right" style="background: transparent linear-gradient(180deg, #4568DC 0%, #B06AB3 100%) 0% 0% no-repeat padding-box;
+                    <div class="col-md-4 ">
+                        <h1 class="mt-5 pt-5 sticky-top text-capitalize font-weight-bold pr-5 text-right" style="background: transparent linear-gradient(180deg, #4568DC 0%, #B06AB3 100%) 0% 0% no-repeat padding-box;
                     -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;">Our Build </br>Process</h1>
+                    -webkit-text-fill-color: transparent;">OUR BUILD </br>PROCESS</h1>
                     </div>
                     <div class="col-md-6">
                         <div class="container mb-5">
@@ -324,22 +326,18 @@
         <div class="pt-5 col"></div>
     </section>
     <section>
-        <div>
+        <div class="d-lg-flex">
             <img src="/assets/Rectangle 12.png" class="img-fluid float-left position-static" alt="Responsive image">
-            <div class="row h-100">
-                <div class="card-body p-4" style="background-color: #2350FB;">
-                    <div class=" text-center">
-                        <h5 class="text-center pt-5"></h5>
-                        <h5 class="text-center pt-5"></h5>
-                        <h5 class="text-center pt-5 text-light">WE HAVE AWESOME STUFF TO SHOW</h5>
-                        <h4 class="text-center font-weight-bold">Partner with Us</h4>
+                <div class="card-body p-4 d-flex justify-content-center align-items-center" style="background-color: #2350FB;">
+                    <div>
+                    <h3 class="text-white"> WE HAVE AWESOME STUFF TO SHOW</h3>
+                        <h4>Partner with Us</h4>
                         <button style="vertical-align:middle btn-light" class="button--red">
                             <span class="hover1">Get Started</span>
                         </button>
-                        <h5 class="text-center pt-5"></h5>
                     </div>
+                       
                 </div>
-            </div>
         </div>
     </section>
     <footer class="site-footer pt-5" style="background-color: #F8F9FA;">
