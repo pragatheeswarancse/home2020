@@ -22,8 +22,6 @@ xl: 1300px,
 $enable-responsive-font-sizes: true;
 @import './node_modules/bootstrap/scss/bootstrap';
 .home {
-    height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -136,4 +134,24 @@ ul.timeline>li:before {
 
 .card-hover:hover {
     box-shadow: 0 4px 15px 0 #f9f9fa;
+}
+
+.banner-font {
+    font-size: 64px
+}
+
+.banner-paragraph {
+    font-size: 12px
+}
+
+@media screen and (max-width: 540px) {
+    .banner-font {
+        font-size: calc(36px + 6 * ((100vw - 320px) / 680));
+    }
+    .banner-paragraph {
+        font-size: 12px
+    }
+    .desktop-div {
+        display: none;
+    }
 }
