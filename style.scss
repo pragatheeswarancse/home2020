@@ -144,6 +144,10 @@ ul.timeline>li:before {
     font-size: 12px
 }
 
+.mobile_view {
+    display: none;
+}
+
 @media screen and (max-width: 540px) {
     .banner-font {
         font-size: calc(36px + 6 * ((100vw - 320px) / 680));
