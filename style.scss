@@ -1,5 +1,3 @@
-// Custom.scss
-// Option A: Include all of Bootstrap
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 $font-family-base: 'Poppins',
 -apple-system,
@@ -20,31 +18,26 @@ lg: 1000px,
 xl: 1300px,
 );
 $enable-responsive-font-sizes: true;
-@import './node_modules/bootstrap/scss/bootstrap';
-.home {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
 .underline {
-    background: linear-gradient(60deg, #4568dc 0%, #b06ab3 100%);
+    background: linear-gradient(60deg, #4568DC 0%, #B06AB3 100%);
     height: 1px;
 }
 
 .btn-learn:hover {
-    box-shadow: 0 4px 15px 0 #2350fb;
+    box-shadow: 0 4px 15px 0 #2350FB;
 }
 
 .btn-power:hover {
-    box-shadow: 0 4px 15px 0 #ff0000;
+    box-shadow: 0 4px 15px 0 #FF0000;
 }
 
 .btn-it:hover {
-    box-shadow: 0 4px 15px 0 #f6b833;
+    box-shadow: 0 4px 15px 0 #F6B833;
 }
 
 .btn-consulting:hover {
-    box-shadow: 0 4px 15px 0 #531fff;
+    box-shadow: 0 4px 15px 0 #531FFF;
 }
 
 ul.timeline {
@@ -74,7 +67,7 @@ ul.timeline>li:before {
     display: inline-block;
     position: absolute;
     border-radius: 50%;
-    border: 5px solid #531fff;
+    border: 5px solid #531FFF;
     left: 20px;
     width: 20px;
     height: 20px;
@@ -82,80 +75,102 @@ ul.timeline>li:before {
     box-shadow: 0px 3px 12px #00000029;
 }
 
-.button--red {
-    display: inline-block;
-    border-radius: 15px;
-    background-color: #ffffff;
-    opacity: 68%;
-    min-height: 48px;
-    -webkit-box-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    justify-content: center;
-    color: #000000;
-    font-family: 'Roboto', sans-serif;
+.home {
+    background-repeat: no-repeat;
+    background-position: absolute
+}
+
+.brand-name {
+    font-weight: 800;
+    font-size: 24px;
+    color: #181818;
+}
+
+.header-links {
     font-weight: 600;
-    font-size: 16px;
-    text-transform: capitalize;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    box-sizing: border-box;
-    min-width: 120px;
-    text-decoration: none;
-    border-width: 0px;
+    font-size: 12px;
+    color: #181818 !important;
+    text-transform: uppercase;
 }
 
-.button--red .hover1 {
-    cursor: pointer;
-    display: inline-block;
+.ht-nav {
+    height: 4rem;
+}
+
+.card-heading {
+    font-size: 15px
+}
+
+.card-location {
+    font-size: 10px
+}
+
+.inputGroup1 {
+    background-color: #ffffff;
+    display: block;
+    margin: 10px 0;
     position: relative;
-    transition: 0.5s;
-}
-
-.button--red .hover1:after {
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-}
-
-.button--red:hover .hover1 {
-    padding-right: 25px;
-}
-
-.button--red:hover .hover1:after {
-    opacity: 1;
-    right: 0;
-}
-
-.card-hover:hover {
-    box-shadow: 0 4px 15px 0 #f9f9fa;
-}
-
-.banner-font {
-    font-size: 64px
-}
-
-.banner-paragraph {
-    font-size: 12px
-}
-
-.mobile_view {
-    display: none;
-}
-
-@media screen and (max-width: 540px) {
-    .banner-font {
-        font-size: calc(36px + 6 * ((100vw - 320px) / 680));
+    .label1 {
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        transition: color 200ms ease-in;
+        overflow: hidden;
+        &:before {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            content: '';
+            background-color: #2680EB;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) scale3d(1, 1, 1);
+            transition: all 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+            opacity: 0;
+            z-index: -1;
+        }
+        &:after {
+            width: 15px;
+            height: 15px;
+            content: '';
+            border: 2px solid #D1D7DC;
+            background-color: #fff;
+            background-image: url("data:image/svg+xml,%3Csvg width='15' height='15' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='%23fff' fill-rule='nonzero'/%3E%3C/svg%3E ");
+            background-repeat: no-repeat;
+            background-position: 0px 1px;
+            border-radius: 50%;
+            z-index: 2;
+            position: absolute;
+            left: 3px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: all 200ms ease-in;
+        }
     }
-    .banner-paragraph {
-        font-size: 12px
+    input:checked~label {
+        color: #fff;
+        &:before {
+            transform: translate(-50%, -50%) scale3d(56, 56, 1);
+            opacity: 1;
+        }
+        &:after {
+            background-color: #548ce0;
+            border-color: #548ce0;
+        }
     }
-    .desktop-div {
-        display: none;
+    .input1 {
+        width: 32px;
+        height: 32px;
+        order: 1;
+        z-index: 2;
+        border-radius: 3px;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        visibility: hidden;
     }
 }
