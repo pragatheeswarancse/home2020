@@ -174,3 +174,10 @@ ul.timeline>li:before {
         visibility: hidden;
     }
 }
+
+.process-number {
+    font-size: 100px;
+    position: absolute;
+    z-index: -1;
+    color: rgba(119, 119, 119, 0.11);
+}
