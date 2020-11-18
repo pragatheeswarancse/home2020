@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="220" height="180" viewBox="0 0 220 180">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1339" data-name="Rectangle 1339" width="220" height="180" transform="translate(1811 1790)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_92" data-name="Mask Group 92" transform="translate(-1811 -1790)" clip-path="url(#clip-path)">
+    <g id="Firebase" transform="translate(1671.807 1736.191)">
+      <path id="Path_2559" data-name="Path 2559" d="M269.29,118.828l-17.775,16.763-16.5-33.723,8.523-19.389c2.155-3.868,5.679-3.918,7.831,0l17.921,36.349Z" fill="#ffa000"/>
+      <path id="Path_2560" data-name="Path 2560" d="M251.521,135.579,185.03,198.214l49.988-96.347Z" fill="#f57f17"/>
+      <path id="Path_2561" data-name="Path 2561" d="M288.781,93.192c3.184-3.074,6.464-2.035,7.291,2.328l17.285,101.85-57.329,34.857c-2.011,1.134-7.342,1.582-7.342,1.582s-4.85-.6-6.709-1.635L185.03,198.214,288.781,93.189Z" fill="#ffca28"/>
+      <path id="Path_2562" data-name="Path 2562" d="M235.017,101.865,185.03,198.212,207.308,57.386c.836-4.363,3.283-4.8,5.482-.94l22.227,45.422Z" fill="#ffa000"/>
+    </g>
+  </g>
+</svg>
