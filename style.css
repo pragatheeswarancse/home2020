@@ -10111,9 +10111,11 @@ ul.timeline > li:before {
 }
 
 .tabcontent-blk {
-  width: 150px;
-  padding: 6px 12px;
   min-height: 84px;
+}
+
+.tabcontent {
+  min-height: 10px;
 }
 
 .tabcontent-wrap {
